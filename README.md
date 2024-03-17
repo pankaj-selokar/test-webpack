@@ -68,3 +68,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+***NOTES***
+### reference: 
+[https://www.youtube.com/watch?v=LyxCWXOq4uQ&list=PLolI8AY2AS9ZHVcFVrmBHsaPXhz30W00A&pp=iAQB]
+
+
+npm i webpack-dev-server webpack-cli --save-dev webpack
+
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react
+
+npm i --save  @babel/runtime 
+
+npm i @babel/plugin-transform-runtime
+or
+npm install babel-loader @babel/core @babel/preset-env @babel/preset-react --save-dev
+
+
+***step-1***
+create file webpack.config.js and babelrc
+write code for it
+
+***step-2***
+changes in package.json
+1."start": "webpack serve --mode production --open --hot", //mode development
+2."build": "webpack --mode production",
+
+***step-3*** 
+create file index.html in src folder
+npm i html-webpack-plugin
+
+***LOADERS****
+npm install style-loader css-loader --save-dev
+npm install file-loader --save-dev
+npm install html-loader --save-dev
+
+***CODE SPLITTING***
+npm i react-lodable // for splite and seperate chunks of components
+
+***CLEAN WEBPACK***
+npm i clean-webpack-plugin
+npm i mini-css-extract-plugin
+npm i css-minimizer-webpack-plugin //for optimization css files
+Use minify object to remove comments, whitespace, etc
+
+***COPY WEBPACK***
+npm i copy-webpack-plugin //store images using src='./xyz'
